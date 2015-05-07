@@ -1,0 +1,11 @@
+<!DOCTYPE glassfish-web-app PUBLIC "-//GlassFish.org//DTD
+GlassFish Application Server 3.1 Servlet 3.0//EN"
+        "http://glassfish.org/dtds/glassfish-web-app_3_0-1.dtd">
+<glassfish-web-app>
+    <cache timeout-in-seconds="60">
+        <cache-mapping>
+            <url-pattern>/test</url-pattern>
+            <refresh-field name="cacheme" scope="request.header"/>
+        </cache-mapping>
+    </cache>
+</glassfish-web-app>
